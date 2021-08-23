@@ -12,7 +12,13 @@
 
 	<?php 
 
-		echo "Here is your PHP service!"
+		echo "Here is your PHP service!<br>";
+
+		$varOne = "Flower.cups";
+	 	$varTwo = "Calvados.com";
+
+	 	echo "$varOne doesn't live in $varTwo";
+	 	
 	 ?>
 	
 </body>
