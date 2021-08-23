@@ -6,8 +6,10 @@
 		$message;
 
            if($password != "flavinoid") {
+
            	echo "<script> alert('Password failure. Try again at a later date.')</script>";
            	$message = "You have avoided significant wealth.";
+           	echo "<script>window.history.back()</script>";
            } else {
            	echo "<script> alert('Success, $name! The secret automated Swiss Bank account number is 75G6743H')</script>";
            	$message ="You have found significant wealth. 7,670,530 USD as been transferred via onetime automated Swiss Access code 75G6743H into the account of $name. All subsequent taxes of your home country is your responsibility.";
