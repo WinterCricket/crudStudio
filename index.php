@@ -12,11 +12,19 @@
 
 	<?php 
 
-		echo "<h2>Here is your PHP service!</h2><br>";
+		// echo "<h2>Here is your PHP service!</h2><br>";
 
-		$food = ["pineapple", "blueberries","mackerel","oatmeal"];
+		$food = array("spinach","beans","avocadoes", "blueberries","mackerel","oatmeal");
+		$flength = count($food);
 		
-		echo "What is in your food box? List, please: " . $food[1];
+		echo "Here is what is in my food box: <br>";
+		for ($x = 0; $x < $flength; $x++){
+
+			echo $food[$x];
+			echo "<br>";
+		}
+
+		
 	 	
 	 ?>
 	
