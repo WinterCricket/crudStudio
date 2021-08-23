@@ -12,12 +12,11 @@
 
 	<?php 
 
-		echo "Here is your PHP service!<br>";
+		echo "<h2>Here is your PHP service!</h2><br>";
 
-		$varOne = "Flower.cups";
-	 	$varTwo = "Calvados.com";
-
-	 	echo "$varOne doesn't live in $varTwo";
+		$food = ["pineapple", "blueberries","mackerel","oatmeal"];
+		
+		echo "What is in your food box? List, please: " . $food[1];
 	 	
 	 ?>
 	
