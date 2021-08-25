@@ -1,7 +1,10 @@
 <?php 
 
 	function greeting($name = "Jay Doe"){
-        echo "Well, hello $name!";
+ return "Well, hello $name!";
+    }
+    function insideScoop($secretname = "shhhh!"){
+        return "The secret name is $secretname <br>";
     }
 
    
@@ -19,7 +22,7 @@
  	<h1>PHP Scratcher</h1>
 
  	<?php 
-    greeting("Melissa Maverick");
+     echo greeting(insideScoop());
 ?>
 
 
