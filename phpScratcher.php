@@ -2,9 +2,9 @@
 
 	//$message = date("m/d/y");
 
-	$message = scandir("C:mamp");
+   
+?>
 
- ?>
 
  <!DOCTYPE html>
  <html lang="en">
@@ -17,10 +17,12 @@
  	<h1>PHP Scratcher</h1>
 
  	<?php 
+$cars = array("Camry", "Rav4", "Lexus Boogoo");
 
-echo print_r($message);
-
- ?>
+foreach($cars as $car){
+    echo $car . "<br>";
+}
+?>
 
 
  </body>
