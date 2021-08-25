@@ -19,11 +19,11 @@ $_SESSION["email"] = "flyingicecream@example.com";
 	<h1>PHP Sessions: maintaining state</h1>
 	<h2>Sessions allows your application to track users.</h2>
 	<?php 
-echo $_SESSION["username"];
-echo "<br>";
-echo $_SESSION["email"];
+
+echo "Session variables are set.";
 
 	?>
-
+	<br>
+<a href="phpoutput.php">View Session</a>
 </body>
 </html>
