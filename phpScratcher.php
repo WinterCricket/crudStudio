@@ -1,6 +1,8 @@
 <?php 
 
-	//$message = date("m/d/y");
+	function greeting($name = "Jay Doe"){
+        echo "Well, hello $name!";
+    }
 
    
 ?>
@@ -17,11 +19,7 @@
  	<h1>PHP Scratcher</h1>
 
  	<?php 
-$cars = array("Camry", "Rav4", "Lexus Boogoo");
-
-foreach($cars as $car){
-    echo $car . "<br>";
-}
+    greeting("Melissa Maverick");
 ?>
 
 
