@@ -1,5 +1,7 @@
 <?php 
 session_start();
+error_reporting (E_ALL ^ E_NOTICE);
+
  ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@ session_start();
 
 	<?php  
 	if(isset($_SESSION['isLoggedin'])){
-		echo "You are already logged in.";
+		echo "<p>You are already logged in.</p>";
 	} else {
 
 $theForm = <<<THEFORM
@@ -41,7 +43,7 @@ $theForm = <<<THEFORM
 <div>
 	<form method="POST" action="form-response.php" >
 		
-		Name: <input type="text" name="name">
+		Name: <input type="text" name="name" id="username">
 		
 		Password: <input type="password" name="password">
 		
@@ -52,6 +54,24 @@ THEFORM;
 echo $theForm;
 }
 ?>
+
+
+<?php 
+
+$isBlock = $_GET["isBlock"];
+$badUserCredentials = $_GET["badUserCredentials"];
+
+if(isset($isBlock)){
+	echo "<h2>Stop! You need the proper login.</h2>";
+	echo "<script>document.getElementById('username').focus()</script>";
+} elseif($badUserCredentials){
+	echo "<h2>Username or password is wrong.</h2>";
+	echo "<script>document.getElementById('username').focus()</script>";
+}
+
+ ?>
+
+</main>
 </div>
 </body>
 </html>
