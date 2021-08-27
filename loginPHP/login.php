@@ -24,8 +24,20 @@ session_start();
 			<li><a href="logout.php">Log out</a></li>
 		</ul>
 	</nav>
-	<h1>PHP Form Processing</h1>
+<h1>PHP Form Processing</h1>
+	<main>
 
+	<?php  
+	if(isset($_SESSION['isLoggedin'])){
+		echo "You are already logged in.";
+	} else {
+
+$theForm = <<<THEFORM
+
+	
+<p>Welcome to Swiss Accounts!</p>
+
+<h2>Please enter your SA username and password to login: </h2>
 <div>
 	<form method="POST" action="form-response.php" >
 		
@@ -36,7 +48,10 @@ session_start();
 		<input type="submit">
 
 	</form>
-		
+THEFORM;
+echo $theForm;
+}
+?>
 </div>
 </body>
 </html>
