@@ -19,12 +19,8 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li a:hover:not(.active) {
   background-color: #111;
-}
-
-.active {
-  background-color: orange;
 }
 
 input[type=text], select {
