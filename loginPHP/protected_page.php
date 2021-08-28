@@ -3,7 +3,8 @@ session_start();
 
 if(isset($_session['isLoggedin'])){
 
-	} else {
+	} 
+	else {
 		header('Location: login.php?isBlock=true');
 	}
  ?>
@@ -29,7 +30,10 @@ if(isset($_session['isLoggedin'])){
 		</ul>
 	</nav>
 	<main>
+		<div>
 		<h1>You are now in the Swiss Money Zone.</h1>
+        <p>You have found significant wealth.</p><p> 7,670,530 USD as been transferred via onetime automated Swiss Access code 75G6743H</p> <p>into the account of $userName. </p><p>All subsequent taxes you now owe your home country</p><p> is your responsibility.</p>";
+        </div>
 	</main>
 	
 </body>

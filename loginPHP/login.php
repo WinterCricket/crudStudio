@@ -1,6 +1,12 @@
 <?php 
 session_start();
+
+session_unset();
+
+session_destroy();
+
 error_reporting (E_ALL ^ E_NOTICE);
+
 
  ?>
 
@@ -63,6 +69,7 @@ $badUserCredentials = $_GET["badUserCredentials"];
 
 if(isset($isBlock)){
 	echo "<h2>Stop! You need the proper login.</h2>";
+           	
 	echo "<script>document.getElementById('username').focus()</script>";
 } elseif($badUserCredentials){
 	echo "<h2>Username or password is wrong.</h2>";
