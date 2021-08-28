@@ -28,6 +28,9 @@ if(isset($_session['isLoggedin'])){
 			<li><a href="logout.php">Log out</a></li>
 		</ul>
 	</nav>
-	<h1>You are now in the Swiss Money Zone.</h1>
+	<main>
+		<h1>You are now in the Swiss Money Zone.</h1>
+	</main>
+	
 </body>
 </html>

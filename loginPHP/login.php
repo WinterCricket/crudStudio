@@ -43,7 +43,7 @@ $theForm = <<<THEFORM
 <div>
 	<form method="POST" action="form-response.php" >
 		
-		Name: <input type="text" name="name" id="username">
+		Name: <input type="text" name="userName" id="username">
 		
 		Password: <input type="password" name="password">
 		

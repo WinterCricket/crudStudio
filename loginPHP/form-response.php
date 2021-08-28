@@ -4,7 +4,7 @@ session_start();
 
 		$userName = $_POST["userName"];
 
-		if(trim($userName)== "Montreal Toronto"){
+		if(trim($userName) == "Montreal"){
 			$_SESSION['isLoggedin'] = true;
 			header('Location: protected_page.php');
 		} else {
