@@ -1,21 +1,26 @@
 
 <?php 
 session_start();
-		$password = $_POST['password'];
+		
 		
 		$userName = $_POST["userName"];
 
-		if(trim($userName) == "Monty" AND trim($password) == "chuck"){
-			$_SESSION['isLoggedin'] = true;
+		if(trim($userName) == "Monty"){
+
+			$_SESSION['isLoggedIn'] = true;
 			header('Location: protected_page.php');
+
 		} else {
+
 			header('Location: login.php?badUserCredentials=true');
 		}
+
+		
 
 
 	?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -28,4 +33,4 @@ session_start();
 
 
 </body>
-</html>
+</html> -->
